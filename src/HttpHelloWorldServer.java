@@ -42,7 +42,7 @@ public final class HttpHelloWorldServer {
 
             Channel ch = b.bind(PORT).sync().channel();
 
-            System.err.println("Open your web browser and navigate to " +
+            System.err.println("Open your web browser and navigate to this page" +
                     (SSL? "https" : "http") + "://127.0.0.1:" + PORT + '/');
 
             ch.closeFuture().sync();
